@@ -1,0 +1,19 @@
+=== BENCHMARK HPC ===
+Número de elementos: 5,000,000
+Repeticiones por configuración: 3
+
+Workers: 1
+Tiempo promedio: 3.426474 segundos
+Speedup: 1.0000
+Eficiencia: 100.00%
+
+Workers: 2
+Tiempo promedio: 2.028821 segundos
+Speedup: 1.6889
+Eficiencia: 84.44%
+
+Workers: 4
+Tiempo promedio: 1.234130 segundos
+Speedup: 2.7764
+Eficiencia: 69.41%
+
