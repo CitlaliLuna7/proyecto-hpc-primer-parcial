@@ -24,3 +24,15 @@ Cuando el número de workers supera la cantidad de núcleos físicos/lógicos de
 
 ### 7. ¿Este experimento representa HPC o solamente demuestra principios utilizados en HPC?
 **Demuestra principios utilizados en HPC.** Implementa división de dominios, métricas de Speedup y Eficiencia. Sin embargo, un entorno de HPC formal utiliza clústeres multinodo distribuidos con redes de alta velocidad (InfiniBand), MPI y gestores de tareas como SLURM.
+
+## Implementación secuencial
+
+La versión secuencial del programa se encuentra en `src/secuencial.py`.
+
+Esta implementación evalúa la función matemática de manera secuencial, procesando los elementos uno por uno:
+
+f(x) = sqrt(x) + x² + sin(x) + cos(x) + log(x)
+
+El tiempo de ejecución se mide utilizando `time.perf_counter()`, permitiendo posteriormente comparar el rendimiento de la ejecución secuencial con las versiones paralelas.
+
+También se agregaron pruebas automatizadas en `tests/test_secuencial.py` utilizando pytest para verificar que la función matemática produce resultados correctos.
